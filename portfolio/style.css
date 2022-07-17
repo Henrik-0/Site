@@ -20,29 +20,45 @@
     border-radius: 100%;
 }
 
+
+
 body {
     width: 100vw;
     height: 100vh;
+
+    background-color: var(--gray-blue);
+    color: var(--blue-baby);
 }
 
 .container {
-    background-color: #06283D;
     display: flex;
-    gap: 70px;
+
 
     width: 100vw;
 }
 
 .aboutMe {
-    background-color: #06d2ec;
+    background-color: var(--gray-blue);
     display: flex;
     flex-direction: column;
 
     width: 400px;
 }
 
+.aboutMe article {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--blue-ocean);
+
+    padding: 15px;
+    margin: 20px;
+
+    border-radius: 10px;
+}
+
 .projects {
-    background-color: #06d2ec;
+    background-color: var(--gray-blue);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
