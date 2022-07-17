@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-blue: #06283D; 
+    --blue-ocean: #0a3068;
+    --blue-sky: #134faa;
+    --bright-blue: #06d2ec;
+    --blue-baby: #DFF6FF;
+    
+    --default: 'Josefin Sans', sans-serif;
+    --special: 'Stick No Bills', sans-serif;
+}
+
+.profileImage {
+    width: 120px;
+    border-radius: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: #06283D;
+    display: flex;
+    gap: 70px;
+
+    width: 100vw;
+}
+
+.aboutMe {
+    background-color: #06d2ec;
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+}
+
+.projects {
+    background-color: #06d2ec;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    width: 100%;
+}
