@@ -168,6 +168,7 @@ body {
 
 .container-projects {
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 20px;
     
@@ -193,6 +194,7 @@ body {
 .projects ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .projects ul li{
     display: flex;
@@ -218,6 +220,8 @@ body {
 
 .informations {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 
