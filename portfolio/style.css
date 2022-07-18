@@ -146,7 +146,7 @@ body {
     gap: 20px;
 
     max-width: 950px;
-    min-width: 575px;
+    min-width: 520px;
 }
 
 .my-posts {
@@ -242,6 +242,22 @@ body {
     gap: 20px;
 }
 
+.social-to-phone {
+    background-color: var(--blue-ocean);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.550);
+    padding: 15px;
+    
+    display: none;
+}
+.social-container-phone {
+    display: flex;
+    flex-direction: column;
+}
+.social-container-phone img {
+    padding-right: 5px;
+}
+
 footer {
     padding: 10px;
     text-align: center;
@@ -249,6 +265,42 @@ footer {
     color: var(--white-blue);
 }
 
-/* 
-    Until 700px it's ok
-*/
+@media (max-width: 1025px){
+    .left-container {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .right-container {
+        min-width: 310px;
+    }
+    .container-projects {
+        flex-direction: column;
+    }
+    .informations {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .left-container {
+        display: none;
+    }
+    .social-to-phone {
+        display: block;
+        order: 3;
+    }
+    .container-me {
+        order: 1;
+    }
+    .my-posts {
+        order: 2;
+    }
+}
