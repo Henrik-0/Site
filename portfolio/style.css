@@ -265,6 +265,16 @@ footer {
     color: var(--white-blue);
 }
 
+@media (max-height: 840px) {
+    .left-container {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    footer {
+        display: none;
+    }
+}
+
 @media (max-width: 1025px){
     .left-container {
         justify-content: flex-start;
