@@ -11,7 +11,7 @@
     --gray-blue: #0A1128; 
     --blue-ocean: #001F54;
     --blue-sky: #034078;
-    --bright-blue: #1390b3;
+    --bright-blue: #0e9ec5;
     --white-blue: #c8f3ff;
     
     --default: 'Josefin Sans', sans-serif;
@@ -38,6 +38,14 @@ a {
 }
 a:hover {
     color: var(--bright-blue);
+}
+
+h1, h2, h3 {
+    font-family: var(--special);
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 15px;
 }
 
 body {
@@ -99,18 +107,20 @@ body {
 .tech-container ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 
-    height: 50px;
 }
 .tech-container ul li {
-    padding: 5px;
-
+    padding: 5px 10px;
     font-weight: bolder;
+    text-align: center;
+
+    flex: 1;
 
     background-color: var(--bright-blue);
     color: var(--blue-sky);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .experience-container {
@@ -135,7 +145,8 @@ body {
     flex-direction: column;
     gap: 20px;
 
-    max-width: 930px;
+    max-width: 950px;
+    min-width: 575px;
 }
 
 .my-posts {
@@ -153,26 +164,26 @@ body {
     padding: 15px;
 
     width: 100%;
-    min-width: 380px;
 }
 
 .container-projects {
     display: flex;
+    width: 100%;
     gap: 20px;
     
 }
 .projects {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    gap: 5px;
 
     background-color: var(--blue-ocean);
     padding: 15px;
 
     border-radius: 15px;
 
-    max-width: 455px;
-    min-width: 380px;
+    width: 100%;
+    height: 110px;
 }
 .projects h3 {
     display: flex;
@@ -203,7 +214,6 @@ body {
     padding: 15px;
 
     width: 100%;
-    min-width: 380px;
 }
 
 .informations {
@@ -216,7 +226,6 @@ body {
     padding: 15px;
 
     width: 100%;
-    min-width: 380px;
 }
 
 .content-me {
