@@ -34,5 +34,13 @@ body {
 
 .container {
     display: flex;
-    
+}
+
+.aboutMe {
+    background-color: var(--gray-blue);
+}
+
+.projects {
+    background-color: var(--gray-blue);
+    flex-grow: 1;
 }
