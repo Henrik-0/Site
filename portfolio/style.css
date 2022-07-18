@@ -271,6 +271,9 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .right-container {
+        min-width: 320px;
+    }
     .left-container {
         display: none;
     }
