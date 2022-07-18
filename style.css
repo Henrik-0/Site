@@ -265,41 +265,8 @@ footer {
     color: var(--white-blue);
 }
 
-@media (max-height: 840px) {
-    .left-container {
-        justify-content: flex-start;
-        gap: 20px;
-    }
-    footer {
-        display: none;
-    }
-}
-
-@media (max-width: 1025px){
-    .left-container {
-        justify-content: flex-start;
-        gap: 20px;
-    }
-    footer {
-        display: none;
-    }
-}
-
-@media (max-width: 850px){
-    .right-container {
-        min-width: 310px;
-    }
-    .container-projects {
-        flex-direction: column;
-    }
-    .informations {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-}
-
-@media (max-width: 650px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .left-container {
         display: none;
     }
@@ -312,5 +279,43 @@ footer {
     }
     .my-posts {
         order: 2;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    .right-container {
+        min-width: 310px;
+    }
+    .left-container {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .container-projects {
+        flex-direction: row;
+    }
+    .left-container {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .informations {
+        flex-direction: row;
     }
 }
